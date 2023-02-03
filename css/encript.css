@@ -1,0 +1,160 @@
+*{
+  font-family: "Inter";
+  color: #0a3871;
+  background: #E5E5E5;
+}
+small {
+   font-family: "Inter";
+  font-size: 12px; }  
+p { 
+  font-size: 32px;
+  font-family: "Inter";
+  margin: 6px 24px;
+}
+
+header { width: 100%; }
+.logoAlura { padding: 24px; }
+
+#instrucciones {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+}
+#instr { 
+  color: #495057;
+  margin-left: 8px;
+}
+
+.texto {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: none;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+input { 
+  width: 335px;
+  height: 65px;
+  border-radius: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 12px;
+}
+#encrp {
+  background: #0A3871;
+  color: white;
+}
+#encrp:hover {
+  background: #2762a9;
+  color: #b7d0ef;
+}
+.btnGris:hover {
+  background: #91959a;
+  color: #f1f4f7;
+}
+
+.muñeco {
+  display: none;
+}
+
+#msj {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343A40;
+  background: white;
+  padding: 24px;
+  border-radius: 24px;
+  margin-top: 24px;
+}
+
+/* datos de contacto colapsables */
+.colapsable {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-top: 24px;
+}
+.activo, .colapsable:hover {
+  background: #0A3871;
+  color: white;
+}
+.contenido {
+  background: #E5E5E5;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+.dato { font-size: 14px; }
+
+#derechos {
+  width: 100%;
+  text-align: center;
+  margin-top: 12px;
+}
+/* fin de datos de contacto colapsables */
+
+/* Responsivo */
+@media (min-width: 550px) {
+  #frm {
+    display: block;
+  }
+  .botones {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  #msj {
+    width: 85%;
+    margin: 12px auto;
+  }
+  #copiar {
+    width: 90%;
+  }
+}
+
+@media (min-width: 750px) {
+  #frm {
+    display: flex;
+  }
+  #encripZone {
+    width: 65%;
+   }
+  #txtEncrp {
+    height: 525px;
+  }
+  #decripZone {
+    width: 35%;
+  }
+  .muñeco {
+    display: flex;
+    justify-content: center;
+  }
+}
