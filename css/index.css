@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter";
+  color: #0a3871;
+  background: #E5E5E5;
+}
+
+body {
+  margin: 0;
+}
+
+.columna {             /* Estilos para todas las columnas */
+  float: left;
+}
+
+main {      /* Columna principal */
+  width: 100%;
+}
+
+aside {        /* Columna lateral */
+  width: 100%;
+}
+
+.fila:after {          /* Limpia los flotantes después de las columnas */
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* Responsivo - hace que las columnas se coloquen una al lado de la otra */
+@media screen and (min-width: 550px) {
+  main {
+    width: 50%;
+  }
+  aside {
+    width: 50%;
+  }
+}
+/*Responsivo - hace que las columnas se apilen */
+@media screen and (min-width: 900px) {
+  main {
+    width: 60%;
+  }
+  aside {
+    width: 40%;
+  }
+}

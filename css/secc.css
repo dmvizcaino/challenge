@@ -1,0 +1,163 @@
+small {
+  font-family: "Inter";
+  font-size: 14px; }  
+p { 
+  font-size: 32px;
+  font-family: "Inter";
+  margin: 6px 24px;
+}
+
+.logoAlura { padding: 24px; }
+
+#instrucciones {
+ width: 94%;
+ display: flex;
+ margin: 0 auto;
+ padding-top: 8px;
+}
+#instr { 
+ color: #495057;
+ margin-left: 8px;
+}
+
+.texto {
+ display: block;
+ margin-left: 20px;
+ width: calc(100% - 40px);
+}
+#txtEncrp {
+ width: 100%;
+ height: 150px;
+ padding: 12px 20px;
+ box-sizing: border-box;
+ border: 2px solid #ccc;
+ border-radius: 4px;
+ background-color: none;
+ font-size: 16px;
+ resize: vertical;
+}
+
+.botones {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.btn { 
+ width: 80%;
+ height: 65px;
+ margin: 6px 12px 0 12px;
+ border-radius: 24px;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 19px;
+ text-align: center;
+}
+#encrp {
+ background: #0A3871;
+ color: white;
+}
+#encrp:hover {
+ background: #2762a9;
+ color: #b7d0ef;
+}
+
+#txtDcrp {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: none;
+  font-size: 16px;
+  resize: vertical;
+ }
+
+.btnCopiar{
+  width: 100%;
+  background: white;
+}
+.btnCp {
+  display: block;
+  margin: 12px auto 6px auto;
+  width: 80%;
+  height: 65px;
+  border-radius: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+.gris:hover {
+ background: #91959a;
+ color: #f1f4f7;
+}
+
+#contMuneco {
+  background-color: none;
+}
+#muneco {
+ display: none;
+}
+
+#msj {
+ font-weight: 700;
+ font-size: 24px;
+ line-height: 120%;
+ text-align: center;
+ color: #343A40;
+ background: white;
+ padding: 12px;
+ border-radius: 12px;
+}
+
+/* Responsivo, alinea los botones */
+@media screen and (min-width: 550px) {
+  #txtEncrp {
+    height: 462px;
+  }
+
+  #contMuneco {
+    margin: 0 24px;
+    border-radius: 24px;
+    background: white;
+    padding: 6px;
+  }
+
+  #txtDcrp {
+    height: 420px;
+  }
+
+  .botones{
+    flex-direction: row;
+  }
+  .btn {
+    width: 40%;
+  }
+}
+
+/* Responsivo - muestra el muñeco*/
+@media screen and (min-width: 900px) {
+  #txtEncrp {
+    height: 462px;
+  }
+
+  #muneco{
+    display:block;
+    background-color: white;
+    margin: auto;
+    width: 300px;
+}
+#txtDcrp {
+  height: 150px;
+}
+  .botones{
+    flex-direction: row;
+  }
+  .btn {
+    width: 40%;
+  }
+}

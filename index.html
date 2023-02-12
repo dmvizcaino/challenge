@@ -2,66 +2,77 @@
 <html lang="es">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="reto, challenge, encriptador, Grupo 4">
-    <meta name="keywords" content="Alura latam, alura, ALURA, oracle, ORACLE, Oracle, ONE, Next, Education">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <title>Reto Alura - Encriptador</title>
+    <meta charset="utf-8">
+    <meta name="description" content="reto, challenge, encriptador, Grupo 4">
+    <meta name="keywords" content="Alura latam, alura, ALURA, oracle, ORACLE, Oracle, Next, Education, ONE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logoAlura.svg" />
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/encript.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/secc.css">
+    <link rel="stylesheet" href="css/pie.css">
     <script src="js/encriptCtrl.js"></script>
     <script src="js/encriptCls.js"></script>
   </head>
 
   <body>
 
-    <header id="cabecera">
-      <figure class="logoAlura"><img src="img/logo.svg" alt="Alura latam ONE"></figure>
+    <header>
+      <figure class="logoAlura"><img src="img/logoAlura.svg" alt="Alura latam ONE"></figure>
     </header>
 
-    <form id="frm">
-      <section id="encripZone">
-        <p>Ingrese el texto aquí</p>
-        <div class="texto">
-          <textarea id="txtEncrp" autofocus placeholder="Lorem ipsum dolor sit amet, consectetur..."></textarea><br>
-        </div>
-        <div id="instrucciones">
-          <figure class="excl"><img src="img/instrucciones.svg" alt="Exclamación"></figure>
-          <small id="instr">Solo letras minúsculas y sin acentos</small>
-        </div>
-        <div class="botones">
-          <input type="button" id="encrp" value="Encriptar">
-          <input type="button" class="btnGris" id="dcrp" value="Desencriptar"><br>
-        </div>
-      </section>
-      <section id="decripZone">
-        <div id="contMuñeco"><figure class="muñeco"><img src="img/Muñeco.svg" alt="¿Que encripto?"></figure></div>
-        <p id="msj">Ningún mensaje fue encontrado</p>
-        <div class="texto">
-          <textarea id="txtDcrp" placeholder="Ingrese el texto que desee desencriptar"></textarea><br>
-        </div>
-        <div class="botones">
-          <input type="button" class="btnGris" id="copiar" value="Copiar"><br>
-        </div>
-      </section>
-    </form>
+    <div class="fila">
+
+      <main class="columna">
+        <section id="encripZone">
+          <p>Ingrese el texto aquí</p>
+          <div class="texto">
+            <textarea id="txtEncrp" autofocus placeholder="Lorem ipsum dolor sit amet, consectetur..."></textarea><br>
+          </div>
+          <div id="instrucciones">
+            <figure class="excl"><img src="img/exclm.svg" alt="Exclamación"></figure>
+            <small id="instr">Solo letras minúsculas y sin acentos</small>
+          </div>
+          <div class="botones">
+            <input type="button" class="btn" id="encrp" value="Encriptar">
+            <input type="button" class="btn gris" id="dcrp" value="Desencriptar"><br>
+          </div>
+        </section>
+      </main>
+
+      <aside class="columna">
+          <div id="contMuneco">
+            <img id="muneco" src="img/muneco.svg" alt="¿Que encripto?">
+            <p id="msj">Ningún mensaje fue encontrado</p>
+            <div class="texto">
+              <textarea id="txtDcrp" placeholder="Ingrese el texto que desee desencriptar"></textarea>
+            </div>
+              <input type="button" class="btnCp gris" id="copiar" value="Copiar">
+          </div>
+      </aside>
+
+    </div>      <!-- fin div fila-->
 
     <footer id="pie">
       <section id="seccion">
-        <button type="button" class="colapsable" id="oculto">Contacto</button>
-        <div class="contenido" id="cont">
-          <p class="dato">David Morales Vizcaíno</p>
-          <p class="dato">e-mail: d.m.vizcaino@hotmail.com</p>
-          <p class="dato">LinkedIn:</p>
-          <p class="dato">Tweeter:</p>
+        <div>
+          <button type="button" class="colapsable" id="oculto">Contacto</button>
+          <div class="contenido" id="cont">
+            <div class="contenedor">
+              <p class="dato">Autor: David Morales Vizcaíno</p>
+              <a href="mailto:d.m.vizcaino@hotmail.com"><img src="img/mailBlack.svg" width="32" height="32" alt="correo"></a>
+              <a href="https://www.linkedin.com/in/dm-vizcaino-5334729a/"><img src="img/linkedin.svg"width="32" height="32" alt="correo"></a>
+              <a href="https://twitter.com/dmv00781987"><img src="img/twitter.svg" width="32" height="32" alt="correo"></a>
+            </div>
+          </div>
         </div>
       </section>
       <div id="derechos">
         <small>Derechos reservados &COPY;dmv  2023</small>
       </div>
     </footer>
-
+    
   </body>
-
 </html>

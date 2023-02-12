@@ -1,5 +1,5 @@
 class Interprete {
-
+  
   constructor (texto) {
     this.texto = texto;
   }
